@@ -3,9 +3,19 @@ import React from 'react';
 function About() {
     return (
         <section id="about">
-        <h2>About Me</h2>
+            <h2>About Me</h2>
             <div>
                 <h3>As A Team Leader</h3>
+                <p>I have 11 years of experience leading teams in multiple industries. In my my early years, I built teams and operations
+                    for several new local businesses which grew to succeed and break even within their first year. Most recently, I 
+                    had the opportunity to expand an existing team, hiring on 18 new members, and can tout a 100% retention rate of team members and reaching 150% of 
+                    the financial goal for that season. I am keen on motivation analysis and empathetic communication. My teams know that
+                    I am there to be a resource with their best interests at heart. My aim is to create a habit of success ensured by skill
+                    development and thorough communication.
+                </p>
+            </div>
+            <div>
+                <h3>As A Creator</h3>
                 <p><em>Success is a science; if you have the conditions, you get the result.</em><br />
                 - Letters of Oscar Wilde</p>
                 <p>Mathematically this is known as "likelihood" - it's a fun concept to mull over. 
