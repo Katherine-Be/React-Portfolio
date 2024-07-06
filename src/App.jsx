@@ -5,13 +5,15 @@ import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { Route,Routes } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-    {/* <Canvas /> */}
+    {/* <Canvas /> // May use later for three.js*/}
       <Header />
+
 
       <main>
         <About />
@@ -20,7 +22,14 @@ function App() {
 
         <Contact /> 
       </main>
-
+      <div>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
     {/* <Footer /> */}
     </>
   )
