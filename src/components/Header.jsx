@@ -4,12 +4,15 @@ import icon from '../assets/Portfolio_logo_6_idea.png';
 
 
 function Header() {
+
+
+
     return (
       <header>
         <nav class="flex items-center justify-between flex-wrap bg-cyan-400 p-6 mb-12">
           <div class="flex items-center flex-shrink-0 text-white mr-6">
             <img class="fill-current h-30 w-32 mr-2" width="54" height="54" viewBox="0 0 54 54" src={ icon }></img>
-            <span class="font-semibold text-3xl sm:text-4xl tracking-tight">Katherine Alex Bensley</span>
+            <span class="fflex-wrap ont-semibold text-2xl sm:text-4xl tracking-tight">Katherine Alex Bensley</span>
           </div>
           {/*this div is a menu button on mobile  */}
           {/* <div class="block lg:hidden">
