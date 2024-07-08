@@ -23,10 +23,10 @@ function Header() {
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-3xl lg:flex-grow">
               <div class="block mt-4 lg:inline-block lg:mt-0 text-indigo-100 hover:text-white mr-4">
-                <Link to="./About">About</Link>
+                <Link to="./">About</Link>
               </div>
               <div class="block mt-4 lg:inline-block lg:mt-0 text-indigo-100 hover:text-white mr-4">
-                <Link to="./">Projects</Link>
+                <Link to="./Projects">Projects</Link>
               </div>
               <div class="block mt-4 lg:inline-block lg:mt-0 text-indigo-100 hover:text-white">
                <Link to="./Contact">Contact</Link>
