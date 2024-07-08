@@ -11,21 +11,21 @@ function App() {
 
   return (
     <>
+
         <Header />
          <Routes>
-            {/* <Route exact path="/" element={<Home />} /> */}
             <Route path="/About" element={<About />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Resume" element={<Resume />} />
           </Routes>
-      {/* <main>
-        <About />
+      <main>
+        {/* <About />
 
         <Projects />
 
-        <Contact /> 
-      </main> */}
+        <Contact />  */}
+      </main>
 
     {/* <Footer /> */}
     </>

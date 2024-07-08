@@ -1,5 +1,6 @@
 import React from 'react';
 import PDF from '../assets/Katherine_Alex_Bensley_Resume.pdf';
+import Profile from './Profile';
 
 function Resume() {
     const onPDFButtonClick = () => {
@@ -17,6 +18,7 @@ function Resume() {
 
     return (
      <>
+    <Profile />
         <div class="flex justify-around">
         <div class="relative inline-flex group">
             <div

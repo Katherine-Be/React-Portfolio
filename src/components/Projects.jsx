@@ -1,4 +1,5 @@
 import React from 'react';
+import Profile from './Profile';
 
 import { Carousel } from "flowbite-react";
 import Digital_Orrery_Logo from '../assets/Digital_Orrery_Logo.png';
@@ -6,6 +7,7 @@ import Marvel_Versus_1st_logo from '../assets/Marvel_Versus_1st_logo.png';
 import Noted_Logo from '../assets/Noted_Logo.png';
 
 function Projects() {
+  
     const carouselContainer = {
             "root": {
               "base": "relative h-full w-full",
@@ -38,6 +40,9 @@ function Projects() {
           }
 
     return (
+      <>
+        <Profile />
+
         <div className="m-0 sm:m-10">
         <div className="h-dvh">
         <Carousel class="h-64 m:h-max sm:h-100dvh">
@@ -49,6 +54,7 @@ function Projects() {
         </Carousel>
       </div>
       </div>
+      </>
     )
 }
 
