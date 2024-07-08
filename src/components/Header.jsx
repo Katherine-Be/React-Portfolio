@@ -26,7 +26,7 @@ function Header() {
                 <Link to="./About">About</Link>
               </div>
               <div class="block mt-4 lg:inline-block lg:mt-0 text-indigo-100 hover:text-white mr-4">
-                <Link to="./Projects">Projects</Link>
+                <Link to="./">Projects</Link>
               </div>
               <div class="block mt-4 lg:inline-block lg:mt-0 text-indigo-100 hover:text-white">
                <Link to="./Contact">Contact</Link>
