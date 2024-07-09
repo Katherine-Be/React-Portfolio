@@ -19,7 +19,7 @@ Go to https://main--ka-alex-bensley.netlify.app/
 ## License
 ![ alt text ](https://img.shields.io/badge/License-None-blue)
 
-![img](href=./src/assets/portfolio_screenshot.png)
+![alt text]("./src/assets/portfolio_screenshot.png)
 
 ## Badge
 ![ alt text ](https://img.shields.io/badge/Creator-KAT-pink)
