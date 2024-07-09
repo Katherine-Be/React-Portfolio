@@ -5,14 +5,14 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
 
-        <Header />
+        <Header currentPath={location.pathname} />
          <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Projects" element={<Projects />} />
