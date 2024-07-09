@@ -1,10 +1,47 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Profile from './Profile';
 import LinkedIn from '../assets/In-Blue-40.png';
 import GitHub from '../assets/github-mark-white.png';
 import Gmail from '../assets/gmail_icon.png';
 
+
 function Contact() {
+
+    // Add states for validation
+    const [isFirstNameValid, setFirstNameValid] = useState(true);
+    const [isLastNameValid, setLastNameValid] = useState(true);
+    const [isEmailValid, setEmailValid] = useState(true);
+    const [isMessageValid, setMessageValid] = useState(true);
+        
+    const validateFormEntries = (event) => {
+        const { name, value } = event.target;
+        let isValid = true;
+    
+        // First name validation: check for minimum length of 2 characters
+        if (name === "firstName") {
+            isValid = value.trim().length >= 2;
+            setFirstNameValid(isValid); // Correctly set message validation state
+        }
+
+        // Last name validation: check for minimum length of 2 characters
+        if (name === "lastName") {
+            isValid = value.trim().length >= 2;
+            setLastNameValid(isValid); // Correctly set message validation state
+        }
+            // Email validation
+        if (name === "email") {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            isValid = emailRegex.test(value);
+            setEmailValid(isValid); // Correctly set email validation state
+        }
+
+        // Message validation: check for minimum length of 10 characters
+        if (name === "message") {
+            isValid = value.trim().length >= 10;
+            setMessageValid(isValid); // Correctly set message validation state
+        } 
+    };
+
     return (
         <div>
         <Profile />
@@ -42,40 +79,53 @@ function Contact() {
                         for="grid-first-name">
                         First Name
                     </label>
-                    <input
-                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                        id="grid-first-name" type="text" placeholder="Jane" />
+                    <textarea id="grid-firstName" name="firstName" rows="1"
+                    class={`appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${isFirstNameValid ? 'border-gray-500 focus:border-gray-500' : 'border-red-500 focus:border-red-500'}`}
+                    onBlur={validateFormEntries}>
+                    </textarea>
+                    {!isFirstNameValid && <p className="text-red-500">This field is required</p>}
+
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-last-name">
                         Last Name
                     </label>
-                    <input
-                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-last-name" type="text" placeholder="Doe" />
+                    <textarea id="grid-lastName" name="lastName" rows="1"
+                    class={`appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${isLastNameValid ? 'border-gray-500 focus:border-gray-500' : 'border-red-500 focus:border-red-500'}`}
+                    onBlur={validateFormEntries}>
+                    </textarea>
+                    {!isLastNameValid && <p className="text-red-500">This field is required</p>}
+
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password">
-                        Email Address</label>
+                        for="grid-email">
+                        Email Address
+                    </label>
+                    <textarea id="grid-email" name="email" rows="1"
+                    class={`appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${isEmailValid ? 'border-gray-500 focus:border-gray-500' : 'border-red-500 focus:border-red-500'}`}
+                    onBlur={validateFormEntries}>
+                    </textarea>
+                    {!isEmailValid && <p className="text-red-500">Invalid email</p>}
 
-                    <input
-                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-email" type="email" placeholder="********@*****.**" />
                 </div>
             </div>
 
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password">
+                        for="grid-message">
                         Your Message
                     </label>
-                    <textarea rows="10"
-                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+                    <textarea id="grid-message" name="message" rows="1"
+                    class={`appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${isMessageValid ? 'border-gray-500 focus:border-gray-500' : 'border-red-500 focus:border-red-500'}`}
+                    onBlur={validateFormEntries}>
+                    </textarea>
+                    {!isMessageValid && <p className="text-red-500">Please write a message</p>}
+
                 </div>
                 <div class="flex justify-between w-full px-3">
                     <div class="md:flex md:items-center">
