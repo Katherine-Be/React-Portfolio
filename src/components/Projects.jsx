@@ -47,8 +47,8 @@ function Projects() {
             </div>
 
             <div className="flex h-full items-center justify-center bg-slate-500 dark:bg-gray-700 dark:text-white">
-              <a href="https://noted-1-c0882f514de5.herokuapp.com/"><img src={Noted_Logo} alt="..." class="max-w-md object-fit"/>
-                </a><a href="https://github.com/Katherine-Be/Noted"><img src={Github} alt="..." class=" max-w-sm"/>
+              <a href="https://noted-1-c0882f514de5.herokuapp.com/"><img src={Noted_Logo} alt="..." class="sm:width-sm md:max-w-md object-fit"/>
+                </a><a href="https://github.com/Katherine-Be/Noted"><img src={Github} alt="..." class="w-sm"/>
                 </a>
             </div>
 
@@ -60,14 +60,14 @@ function Projects() {
             </div>
 
             <div className="flex h-full items-center justify-center bg-slate-200 dark:bg-gray-200 dark:text-white">
-              <a href="https://katherine-be.github.io/City-Weather/"><img src={Weather} alt="..." class="max-w-md object-fit"/>
+              <a href="https://katherine-be.github.io/City-Weather/"><img src={Weather} alt="..." class="sm:width-sm md:max-w-md object-fit"/>
                 </a>
               <a href="https://github.com/Katherine-Be/City-Weather"><img src={Github} alt="..." class=" max-w-sm"/>
                 </a>
             </div>
 
             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-              <a href="https://katherine-be.github.io/Daily_Scheduler/"><img src={Scheduler} alt="..." class="max-w-md"/>
+              <a href="https://katherine-be.github.io/Daily_Scheduler/"><img src={Scheduler} alt="..." class="sm:width-sm md:max-w-md"/>
                 </a>
               <a href="https://github.com/Katherine-Be/Daily_Scheduler"><img src={Github} alt="..." class=" max-w-sm"/>
                 </a>
