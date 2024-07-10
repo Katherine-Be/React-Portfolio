@@ -5,7 +5,7 @@ import Icon from '../assets/Portfolio_logo_4_idea.png';
 
 function Footer() {
     return (
-        <div class="flex justify-center space-x-5">
+        <div class="flex justify-center space-x-5 mt-10">
             <a href="www.linkedin.com/in/katherine-bensley-89599624b">
                 <img type="icon" src={ LinkedIn } class="bg-white rounded-md mr-5" />
              </a>
