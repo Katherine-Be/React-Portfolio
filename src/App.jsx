@@ -1,18 +1,19 @@
 import './reset.css'
+import './App.css'
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
 
-        <Header currentPath={location.pathname} />
+        <Header />
          <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Projects" element={<Projects />} />
