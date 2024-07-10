@@ -84,8 +84,8 @@ function About() {
                             <p class="text-center text-base">As an interactive developer, my primary aim is to create an experience and 
                                 communicate an understanding of the user while effectively representing a 
                                 brand's voice in the applications I build. I am versed in numerous web development technologies including, but not limited to - 
-                                HTML, CSS, JavaScript, Bootstrap, Node, Express, and MySQL. My current studies include 
-                                Three.js, React and Yuka AI. One thing I love about this industry is that there 
+                                HTML, JavaScript, React, CSS, Tailwind, Bootstrap, Node, Express, and MySQL. My current studies include 
+                                Three.js and Yuka AI. One thing I love about this industry is that there 
                                 is always something new to learn.
                             </p>
                         </div>
