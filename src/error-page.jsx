@@ -4,6 +4,7 @@ export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
+  //may use this later
   return (
     <div id="error-page">
         <h1>Oops!</h1>
