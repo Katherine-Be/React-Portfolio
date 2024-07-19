@@ -28,7 +28,7 @@ function Projects() {
     <>
       <Profile />
 
-      <MyContainer className="m-0 sm:m-10 md-10">
+      <MyContainer className="m-0 sm:m-10 md-10 lg:-mt-10">
         <div style={{
           height: `${height - 500}px`
         }}>

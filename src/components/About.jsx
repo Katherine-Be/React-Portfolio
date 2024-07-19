@@ -1,15 +1,13 @@
 import React from 'react';
-import avatar from '../assets/portraitalt1.png';
+import Profile from './Profile';
+
 function About() {
     return (
-        <section>
+        <section><Profile />
             <div>
             <h2 class="ml-5 lg:ml-10 xl:ml-20 2xl:ml-96 text-4xl md:text-6xl" >About Me</h2>
-            <div class="-mt-48 sm:-mt-20 lg:-mt-0 w-full flex justify-end sm:justify-center">
-                <figure class="h-48 w-48 sm:h-56 sm:w-56 lg:h-80 lg:w-80">
-                    <img src={avatar} alt="A photo of Katherine." class="rounded-full object-cover h-full w-full shadow-md" />
-                </figure>
-            </div>            </div>
+
+</div>
             <div  class="xs:flex-wrap lg:flex  lg:justify-around">  
                 <div class="lg:basis-1/3 group h-100 bg-white dark:bg-shadesOfBlue shadow-md relative rounded-lg m-16 hover:ring hover:ring-shadesOfBlue dark:hover:ring-white transform duration-500 hover:scale-105 hover:shadow-xl">
                     <div class="bg-shadesOfBlue flex justify-center items-center w-28 h-28 rounded-full absolute mx-auto right-0 left-0 -inset-y-14 border-4 border-indigo-100 dark:border-slate-800 group-hover:bg-white dark:group-hover:bg-shadesOfBlue group-hover:shadow-md transform duration-300">
@@ -21,7 +19,7 @@ function About() {
                     </div>
                     <div class="flex flex-col items-center justify-center mx-auto inset-0 p-4">
                         <div>
-                            <h2 class="text-xl capitalize font-bold text-shadesOfBlue dark:text-slate-800 my-4 my-8">As A Team Leader
+                            <h2 class="text-xl capitalize font-bold text-shadesOfBlue dark:text-slate-800 my-4 my-8">As A Leader
                             </h2>
                         </div>
                         <div>
@@ -67,7 +65,7 @@ function About() {
                     </div>
                 </div>
 
-                <div class="lg:basis-1/3 group w-64 h-100 bg-white dark:bg-shadesOfBlue shadow-md relative rounded-lg m-16 hover:ring hover:ring-shadesOfBlue dark:hover:ring-white transform duration-500 hover:scale-105 hover:shadow-xl">
+                <div class="lg:basis-1/3 grouph-100 bg-white dark:bg-shadesOfBlue shadow-md relative rounded-lg m-16 hover:ring hover:ring-shadesOfBlue dark:hover:ring-white transform duration-500 hover:scale-105 hover:shadow-xl">
                     <div class="bg-shadesOfBlue flex justify-center items-center w-28 h-28 rounded-full absolute mx-auto right-0 left-0 -inset-y-14 border-4 border-indigo-100 dark:border-slate-800 group-hover:bg-white dark:group-hover:bg-shadesOfBlue group-hover:shadow-md transform duration-300">
                         <span class="text-3xl md:text-5xl text-white dark:text-slate-800 group-hover:text-shadesOfBlue dark:group-hover:text-white transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">

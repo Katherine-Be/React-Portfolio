@@ -19,8 +19,24 @@ function NavSideBar() {
     return (
         <div className="isolate object-left items-center max-w-dvh md:w-100 2xl:w-screen h-60 overflow-hidden text-gray-400 bg-slate-900" style={headerIndex}>
             <div className="grid grid-cols-4 grid-rows-2 h-60 items-stretch justify-center sm:ml-0 md:ml-72 lg:ml-64 p-6">
-                <div className="col-start-1 col-end-3"></div>
-
+                <div className="col-start-1 grid">
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex justify-self-center-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
+                        {/*can insert small icon here*/}
+                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">About</span>
+                    </NavLink>
+                </div>
+                <div className="col-start-2 grid">
+                    <NavLink to="/About" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
+                        {/*can insert small icon here*/}
+                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Projects</span>
+                    </NavLink>
+                </div>
+                <div className="col-start-3 grid">
+                    <NavLink to="/Contact" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex  justify-self-center  mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
+                        {/*can insert small icon here*/}
+                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Contact Me</span>
+                    </NavLink>
+                </div>
                     <div className="col-start-4 self-center text-xs md:text-3xl rounded-md border border-transparent bg-[#ae45b0] px-4 py-2 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                     <NavLink to="/Resume">Resume
                     </NavLink>
@@ -38,25 +54,7 @@ function NavSideBar() {
                     <img src={Logo} ></img>
                     </NavLink>
                 </div>
-                <div className="w-full px-2">
-                    <div className="flex flex-col items-center w-full mt-3 border-b border-gray-700">
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'active flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300'}>
-                            {/*can insert small icon here*/}
-                            <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">About</span>
-                        </NavLink>
-                            <div className="flex flex-col items-center w-full mt-3 border-b border-gray-700" >
-                                <NavLink to="/Projects" className={({ isActive }) => isActive ? 'active flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300'}>
-                                {/*can insert small icon here*/}
-                                <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Projects</span>
-                                </NavLink>
-                                <NavLink to="/Contact" className={({ isActive }) => isActive ? 'active flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex items-center w-full h-32 px-3 mt-2 py-0 md:py-10 rounded hover:bg-gray-700 hover:text-gray-300'}>
-                                    {/*can insert small icon here*/}
-                                    <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Contact Me</span>
-                                </NavLink>
-                            </div>
-
-                    </div>
-                </div>
+                
             </div>
         </div>
     );
