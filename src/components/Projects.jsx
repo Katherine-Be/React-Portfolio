@@ -10,6 +10,7 @@ import SSC from '../assets/SSC_Logo.png';
 import Weather from '../assets/City_Weather_Favicon_Titled.png';
 import Scheduler from '../assets/Daily_Scheduler_Logo_Titled.png';
 import Github from '../assets/github-mark.png';
+import HexRegex from '../assets/Hex_Gist_Logo.png';
 
 import useWindowDimensions from '../utils/useWindowDimensions';
 
@@ -33,10 +34,24 @@ function Projects() {
           height: `${height - 500}px`
         }}>
           <Carousel>
-            <div className="flex h-full items-center justify-center  dark:text-white">
+            <div className="flex object-contain items-center justify-center  dark:text-white">
               <a href="https://katherine-be.github.io/Digital-Orrery/"><img src={Digital_Orrery_Logo} alt="..." class="w-screen object-cover"/>
                 </a>
                <a href="https://github.com/Katherine-Be/Digital-Orrery" ><img src={Github} alt="..." class="max-w-sm"/>
+                </a>
+            </div>
+
+            <div className="flex  items-center justify-center dark:text-white">
+              <a href="https://katherine-be.github.io/StreetSceneCharlotte/"><img src={SSC} alt="..." class="w-screen object-fit"/>
+                </a>
+              <a href="https://github.com/Katherine-Be/StreetSceneCharlotte"><img src={Github} alt="..." class=" max-w-sm"/>
+                </a>
+            </div>
+
+            <div className="flex h-full items-center justify-center dark:text-white">
+              <a href="https://gist.github.com/Katherine-Be/4b5ddfbe91e0d04b3aa731881f4918b6"><img src={HexRegex} alt="..." class="w-screen object-scale-down"/>
+                </a>
+              <a href="https://gist.github.com/Katherine-Be/4b5ddfbe91e0d04b3aa731881f4918b6"><img src={Github} alt="..." class=" max-w-sm"/>
                 </a>
             </div>
 
@@ -45,34 +60,8 @@ function Projects() {
                 </a>
                <a href="https://github.com/Katherine-Be/Marvel-Versus"><img src={Github} alt="..." class="max-w-sm"/>
                 </a>
-            </div>
+            </div>            
 
-            <div className="flex h-full items-center justify-center dark:text-white">
-              <a href="https://noted-1-c0882f514de5.herokuapp.com/"><img src={Noted_Logo} alt="..." class="sm:width-sm md:max-w-md object-fit"/>
-                </a><a href="https://github.com/Katherine-Be/Noted"><img src={Github} alt="..." class="w-sm"/>
-                </a>
-            </div>
-
-            <div className="flex h-full items-center justify-center dark:text-white">
-              <a href="https://katherine-be.github.io/StreetSceneCharlotte/"><img src={SSC} alt="..." class="w-screen object-fit"/>
-                </a>
-              <a href="https://github.com/Katherine-Be/StreetSceneCharlotte"><img src={Github} alt="..." class=" max-w-sm"/>
-                </a>
-            </div>
-
-            <div className="flex h-full items-center justify-center dark:text-white">
-              <a href="https://katherine-be.github.io/City-Weather/"><img src={Weather} alt="..." class="sm:width-sm md:max-w-md object-fit"/>
-                </a>
-              <a href="https://github.com/Katherine-Be/City-Weather"><img src={Github} alt="..." class=" max-w-sm"/>
-                </a>
-            </div>
-
-            <div className="flex h-full items-center justify-center dark:text-white">
-              <a href="https://katherine-be.github.io/Daily_Scheduler/"><img src={Scheduler} alt="..." class="sm:width-sm md:max-w-md"/>
-                </a>
-              <a href="https://github.com/Katherine-Be/Daily_Scheduler"><img src={Github} alt="..." class=" max-w-sm"/>
-                </a>
-            </div>
           </Carousel>
         </div>
       </MyContainer>
