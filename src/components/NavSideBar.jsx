@@ -20,15 +20,15 @@ function NavSideBar() {
         <div className="isolate object-left items-center max-w-dvh md:w-100 2xl:w-screen h-60 overflow-hidden text-gray-400 bg-slate-900" style={headerIndex}>
             <div className="grid grid-cols-4 grid-rows-2 h-60 items-stretch justify-center sm:ml-0 md:ml-72 lg:ml-64 p-6">
                 <div className="col-start-1 grid">
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex justify-self-center-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
                         {/*can insert small icon here*/}
-                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">About</span>
+                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Projects</span>
                     </NavLink>
                 </div>
                 <div className="col-start-2 grid">
                     <NavLink to="/About" className={({ isActive }) => isActive ? 'active flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300' : 'flex justify-self-center mt-2 py-0 md:py-5 rounded hover:bg-gray-700 hover:text-gray-300'}>
                         {/*can insert small icon here*/}
-                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">Projects</span>
+                        <span className="ml-2 text-sm md:text-lg lg:text-xl font-medium">About Me</span>
                     </NavLink>
                 </div>
                 <div className="col-start-3 grid">
