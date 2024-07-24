@@ -29,6 +29,7 @@ body {
 
 .glitch {
   position: relative;
+  cursor:default;
 }
 
 .glitch::before,
@@ -39,6 +40,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  cursor: default;
 }
 
 .glitch::before {
@@ -46,6 +48,7 @@ body {
   text-shadow: -2px 0 #367799;
   clip: rect(24px, 550px, 90px, 0);
   animation: glitch-anim 4s infinite linear alternate-reverse;
+  cursor: default;
 }
 
 .glitch::after {
@@ -53,6 +56,7 @@ body {
   text-shadow: -2px 0 #ae45b0;
   clip: rect(85px, 550px, 140px, 0);
   animation: glitch-anim 4s infinite linear alternate-reverse;
+  Cursor: default;
 }
 
 @keyframes glitch-anim {
