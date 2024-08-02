@@ -7,8 +7,8 @@ body {
 }
 
 .hexContainer {
-
   aspect-ratio: 1.15;
+  overflow:visible;
 }
 
 .hexagons {
@@ -21,10 +21,12 @@ body {
 .hexagons:hover {
   background-color: black;
   rotate: 360deg;
-  transform: scale(1.5);
+  transform: scale(2);
   z-index: 10;
   transition: 1s;
 }
+
+
 
 @keyframes neon-pulse {
   0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4F46E1, 0 0 35px #4F46E1, 0 0 40px #4F46E1, 0 0 50px #4F46E1, 0 0 75px #4F46E1; }

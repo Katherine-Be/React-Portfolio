@@ -14,7 +14,7 @@ function App() {
   return (
     <>
 
-        {/* <Nav /> */}
+        <Nav />
          <Routes>
             <Route path="/" element={<Projects />} />
             <Route path="/About" element={<About />} />
