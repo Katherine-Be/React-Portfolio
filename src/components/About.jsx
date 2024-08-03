@@ -1,13 +1,52 @@
 import React from 'react';
 import Profile from './Profile';
+import Figma from '../assets/Figma.png';
+import Bootstrap from '../assets/Bootstrap_Logo.png';
+import SQL from '../assets/mySql_Logo.png';
+import ReactLogo from '../assets/React_Logo.png';
+import Three from '../assets/Three_Logo.png';
+import Tail from '../assets/Tailwind_Logo.png';
 
 function About() {
+    const centerBG = {
+        backgroundSize: '50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }
+    const figmaStyle = {
+        backgroundImage: `url(${Figma})`,
+      }
+      const bootStyle = {
+        backgroundImage: `url(${Bootstrap})`,
+      }
+      const mySq = {
+        backgroundImage: `url(${SQL})`,
+      }
+      const reactStyle = {
+        backgroundImage: `url(${ReactLogo})`,
+      }
+      const threeStyle = {
+        backgroundImage: `url(${Three})`,
+      }
+      const twStyle = {
+        backgroundImage: `url(${Tail})`,
+      }
     return (
         <section><Profile />
-            <div>
+            <div className="flex p-10 justify-center">
             <h2 class="ml-5 lg:ml-10 xl:ml-20 2xl:ml-96 text-4xl md:text-6xl" >About Me</h2>
+            <div className="col-start-6 xl:col-start-8 row-span-1 grid grid-cols-8 grid-rows-4 h-56 -mt-24 hexContainer">
+                <p style={{...figmaStyle, ...centerBG}} className="col-start-2 col-end-4 row-start-1 translate-x-1/4 translate-y-1/2 hexagons"></p>
+                <p style={{...bootStyle, ...centerBG}} className="col-start-1 col-end-3 row-start-2 hexagons "> </p>
+                <p style={{...mySq, ...centerBG}}className="col-start-4 col-end-6 row-start-2 hexagons"> </p>
+                <p style={{...reactStyle, ...centerBG}}className="col-start-4 col-end-6 row-start-3 translate-x-1/8 hexagons"> </p>
+                <p style={{...threeStyle, ...centerBG}}className="col-start-1 col-end-3 row-start-3 hexagons"> </p>
+                <p style={{...twStyle, ...centerBG}}className="col-start-2 col-end-4 row-start-4 translate-x-1/4 -translate-y-1/2 hexagons"> </p>
+            </div>
+            </div>
 
-</div>
+
+
             <div  class="xs:flex-wrap lg:flex  lg:justify-around">  
                 <div class="lg:basis-1/3 group h-100 bg-white dark:bg-shadesOfBlue shadow-md relative rounded-lg m-16 hover:ring hover:ring-shadesOfBlue dark:hover:ring-white transform duration-500 hover:scale-105 hover:shadow-xl">
                     <div class="bg-shadesOfBlue flex justify-center items-center w-28 h-28 rounded-full absolute mx-auto right-0 left-0 -inset-y-14 border-4 border-indigo-100 dark:border-slate-800 group-hover:bg-white dark:group-hover:bg-shadesOfBlue group-hover:shadow-md transform duration-300">
