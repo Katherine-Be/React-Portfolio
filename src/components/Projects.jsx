@@ -81,7 +81,7 @@ function Projects() {
 
       <div className="w-screen lg:w-3/5 lg:ml-20 ">
         <div className="flex-wrap lg:grid lg:grid-cols-7 h-min-xl">
-          <p className="col-span-2 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">In this digital orrery, the user can explore our solar system and see the planet sizes to scale.
+          <p className="col-span-2 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">A prototype for a car show website.
           </p>          
           <figure className="col-start-4 col-span-4 bg-black"><a href="https://katherine-be.github.io/StreetSceneCharlotte/"><img src={SSC} alt="..." class="contain "/></a>
           <figcaption className="max-sm:hidden grid grid-cols-10">
@@ -99,7 +99,7 @@ function Projects() {
           <figure className="col-span-3"><a href="https://gist.github.com/Katherine-Be/4b5ddfbe91e0d04b3aa731881f4918b6"><img src={HexRegex} alt="..." class="contain "/></a>
 
           </figure>
-          <p className="col-span-1 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">In this digital orrery, the user can explore our solar system and see the planet sizes to scale.
+          <p className="col-span-1 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">A gist explaining hex color codes and regex.
           </p>     
         </div>
         <figure className="w-3/5 ml-20 "><img src={arrow}/> </figure>
@@ -107,7 +107,7 @@ function Projects() {
 
       <div className="w-screen lg:w-5/6 lg:ml-20 ">
         <div className="flex-wrap lg:grid lg:grid-cols-4 h-min-xl">
-          <p className="col-span-1 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">In this digital orrery, the user can explore our solar system and see the planet sizes to scale.
+          <p className="col-span-1 lg:ml-10 lg:mt-36 text-center text-6 font-bold md:text-3xl">A short game created using Marvel and Youtube APIs.
           </p>          
           <figure className="col-span-3"><a href="https://katherine-be.github.io/Marvel-Versus/"><img src={Marvel_Versus_1st_logo} alt="..." class="contain "/></a>
           <figcaption className="max-sm:hidden grid grid-cols-10 -mt-32">
