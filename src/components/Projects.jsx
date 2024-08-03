@@ -68,14 +68,7 @@ function Projects() {
           <figcaption className="max-sm:hidden grid grid-cols-10 -mt-30 xl:-mt-28">
             <a className="col-start-5 xl:col-start-7 max-w-3xl" href="https://github.com/Katherine-Be/Digital-Orrery" ><img src={GithubWhite} alt="..." class=" justify-center "/>
             </a>
-            <div className="col-start-6 xl:col-start-8 row-span-1 grid grid-cols-8 grid-rows-4 h-52 p-6 -mt-16 hexContainer">
-              <p style={{...figmaStyle, ...centerBG}} className="col-start-2 col-end-4 row-start-1 translate-x-1/4 translate-y-1/2 hexagons"></p>
-              <p style={{...bootStyle, ...centerBG}} className="col-start-1 col-end-3 row-start-2 hexagons "> </p>
-              <p style={{...mySq, ...centerBG}}className="col-start-4 col-end-6 row-start-2 hexagons"> </p>
-              <p style={{...reactStyle, ...centerBG}}className="col-start-4 col-end-6 row-start-3 translate-x-1/8 hexagons"> </p>
-              <p style={{...threeStyle, ...centerBG}}className="col-start-1 col-end-3 row-start-3 hexagons"> </p>
-              <p style={{...twStyle, ...centerBG}}className="col-start-2 col-end-4 row-start-4 translate-x-1/4 -translate-y-1/2 hexagons"> </p>
-            </div>
+
           </figcaption>
           </figure>
 
@@ -94,14 +87,7 @@ function Projects() {
           <figcaption className="max-sm:hidden grid grid-cols-10">
             <a className="col-start-5 xl:col-start-7 max-w-3xl -mt-10" href="https://github.com/Katherine-Be/StreetSceneCharlotte" ><img src={GithubWhite} alt="..." class=" justify-center "/>
             </a>
-            <div className="col-start-6 xl:col-start-8 row-span-1 grid grid-cols-8 grid-rows-4 h-56 -mt-24 hexContainer">
-              <p style={{...figmaStyle, ...centerBG}} className="col-start-2 col-end-4 row-start-1 translate-x-1/4 translate-y-1/2 hexagons"></p>
-              <p style={{...bootStyle, ...centerBG}} className="col-start-1 col-end-3 row-start-2 hexagons "> </p>
-              <p style={{...mySq, ...centerBG}}className="col-start-4 col-end-6 row-start-2 hexagons"> </p>
-              <p style={{...reactStyle, ...centerBG}}className="col-start-4 col-end-6 row-start-3 translate-x-1/8 hexagons"> </p>
-              <p style={{...threeStyle, ...centerBG}}className="col-start-1 col-end-3 row-start-3 hexagons"> </p>
-              <p style={{...twStyle, ...centerBG}}className="col-start-2 col-end-4 row-start-4 translate-x-1/4 -translate-y-1/2 hexagons"> </p>
-            </div>
+
           </figcaption>
           </figure>
         </div>
@@ -127,14 +113,7 @@ function Projects() {
           <figcaption className="max-sm:hidden grid grid-cols-10 -mt-32">
             <a className="col-start-7 xl:col-start-8 max-w-3xl -mt-10" href="https://github.com/Katherine-Be/Marvel-Versus" ><img src={Github} alt="..." class=" justify-center "/>
             </a>
-            <div className="col-start-8 xl:col-start-9 row-span-1 grid grid-cols-8 grid-rows-4 h-56 -mt-24 hexContainer">
-              <p style={{...figmaStyle, ...centerBG}} className="col-start-2 col-end-4 row-start-1 translate-x-1/4 translate-y-1/2 hexagons"></p>
-              <p style={{...bootStyle, ...centerBG}} className="col-start-1 col-end-3 row-start-2 hexagons "> </p>
-              <p style={{...mySq, ...centerBG}}className="col-start-4 col-end-6 row-start-2 hexagons"> </p>
-              <p style={{...reactStyle, ...centerBG}}className="col-start-4 col-end-6 row-start-3 translate-x-1/8 hexagons"> </p>
-              <p style={{...threeStyle, ...centerBG}}className="col-start-1 col-end-3 row-start-3 hexagons"> </p>
-              <p style={{...twStyle, ...centerBG}}className="col-start-2 col-end-4 row-start-4 translate-x-1/4 -translate-y-1/2 hexagons"> </p>
-            </div>
+
           </figcaption>
           </figure>
         </div>
