@@ -43,7 +43,7 @@ function NavSideBar() {
                     </div>
                 <div className="h-20 lg:h-32 col-start-2 md:col-start-1 col-end-4 text-3xl md:text-6xl lg:5xl xl:text-7xl 2xl:text-8xl text-center">
                     <div className="text-center text-lg md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl z-10">
-                        <h1 className="font-bold mb-4 text-white neon-text glitch hover-3d" data-text="Katherine Alex Bensley">Katherine Alex Bensley</h1>
+                        <h1 className="font-bold mb-4 text-white neon-text glitch hover-3d">Katherine Alex Bensley</h1>
                     </div>
                 </div>
 
